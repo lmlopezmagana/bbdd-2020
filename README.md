@@ -5,3 +5,4 @@ Repositorio del módulo de Bases de Datos para el curso 2019-20 (DAM - Salesiano
 A continuación, se detallan los proyectos que se incluyen dentro del repositorio:
 
 * [01_PrimerEjemploSpringCore](https://github.com/lmlopezmagana/bbdd-2020/tree/master/01_PrimerEjemploSpringCore): se trata de un sencillo ejemplo de integración de Spring en un proyecto Maven. Se utiliza la configuración a través de un fichero XML.
+* [02_SegundoEjemploSpringCore](https://github.com/lmlopezmagana/bbdd-2020/tree/master/02_SegundoEjemploSpringCore): este segundo ejemplo muestra como realizar la configuración de beans a través de anotaciones.
