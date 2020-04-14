@@ -1,12 +1,14 @@
 package com.salesianostriana.dam.e01ejerciciodao.dao.impl;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
 
 import com.salesianostriana.dam.e01ejerciciodao.dao.CrudAlumno;
 import com.salesianostriana.dam.e01ejerciciodao.modelo.Alumno;
 
+@Repository
 public class CrudAlumnoEnMemoria implements CrudAlumno {
 	
 	private List<Alumno> listaAlumnos;
@@ -27,7 +29,7 @@ public class CrudAlumnoEnMemoria implements CrudAlumno {
 		return listaAlumnos.stream().filter(x -> x.getId() == id).findFirst().get();
 		
 		// Versión sin lambdas
-		/* boolean encontrado = false;
+		/* bool encontrado = false;
 		 * Alumno resultado = null;
 		for(int i = 0; i < listaAlumnos.size() && !encontrado; i++) {
 			if (listaAlumnos.get(i).getId() == id) {
@@ -49,7 +51,7 @@ public class CrudAlumnoEnMemoria implements CrudAlumno {
 		
 		// @formatter:off
 		
-		/*listaAlumnos
+		listaAlumnos
 		.stream()
 		.filter(x -> x.getId() == alumno.getId())
 		.map((Alumno x) -> {
@@ -59,23 +61,9 @@ public class CrudAlumnoEnMemoria implements CrudAlumno {
 			x.setFechaNacimiento(alumno.getFechaNacimiento());
 			
 			return x;
-		});*/
+		});
 	
 		// @formatter:on
-		
-		boolean encontrado = false;
-		for(int i = 0; i < listaAlumnos.size() && !encontrado; i++) {
-			if (listaAlumnos.get(i).getId() == alumno.getId()) {
-				encontrado = true;
-				listaAlumnos.get(i).setApellidos(alumno.getApellidos());
-				listaAlumnos.get(i).setNombre(alumno.getNombre());
-				listaAlumnos.get(i).setEmail(alumno.getEmail());
-				listaAlumnos.get(i).setFechaNacimiento(alumno.getFechaNacimiento());
-			}
-		}
-		
-		
-		
 		
 	}
 

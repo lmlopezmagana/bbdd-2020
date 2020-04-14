@@ -18,8 +18,7 @@ public class Alumno {
 	
 	
 	public int getEdad() {
-		return Math.toIntExact(ChronoUnit.YEARS.between(fechaNacimiento, 
-				LocalDate.of(Year.now().getValue(), 12, 31)));
+		return Math.toIntExact(ChronoUnit.YEARS.between(fechaNacimiento, LocalDate.of(Year.now().getValue(), 12, 31)));
 	}
 	
 	

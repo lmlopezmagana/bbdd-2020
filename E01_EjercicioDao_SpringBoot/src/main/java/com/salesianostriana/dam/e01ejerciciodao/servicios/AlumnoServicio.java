@@ -1,22 +1,22 @@
-package com.salesianostriana.dam.e01ejerciciodao.dao.servicios;
+package com.salesianostriana.dam.e01ejerciciodao.servicios;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.salesianostriana.dam.e01ejerciciodao.dao.CrudAlumno;
-import com.salesianostriana.dam.e01ejerciciodao.dao.impl.CrudAlumnoEnMemoria;
 import com.salesianostriana.dam.e01ejerciciodao.modelo.Alumno;
+
+@Service
 
 public class AlumnoServicio {
 	
+	@Autowired
 	private CrudAlumno c;
 	
-	public AlumnoServicio() {
-		c = new CrudAlumnoEnMemoria();
-	}
 	
 	/**
 	 * Busca a todos los alumnos
@@ -55,20 +55,20 @@ public class AlumnoServicio {
 		c.delete(alumno);
 	}
 	/**
-	 * Ordena la lista de alumnos por orden alfabético
+	 * Ordena la lista de alumnos por orden alfab�tico
 	 * @return la lista ordenada
 	 */
 	public List<Alumno> getByOrdenAlfabetico(){
 		// @formatter:off
-		/*return c.findAll()
+		return c.findAll()
 					.stream()
 					.sorted(Comparator.comparing(Alumno::getApellidos))
 					.collect(Collectors.toList());
- */
+ 
 		// @formatter:on
 		
 		// Versión sin streams y lambdas
-		
+		/*
 		List<Alumno> alumnos = new ArrayList<>(c.findAll());
 		Collections.sort(alumnos, new Comparator<Alumno>() {
 
@@ -81,7 +81,7 @@ public class AlumnoServicio {
 		
 		
 		return alumnos;
-		
+		*/
 	}
 	/**
 	 * Ordena los alumnos por edad

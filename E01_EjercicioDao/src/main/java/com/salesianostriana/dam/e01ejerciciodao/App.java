@@ -19,7 +19,8 @@ public class App {
 				LocalDate.of(1984, 1, 1)));
 		servicio.insert(new Alumno(servicio.makeID(), "Ángel", "Naranjo González", "angel.naranjo@salesianos.edu",
 				LocalDate.of(1976, 12, 1)));
-		Alumno rafa = new Alumno(servicio.makeID(), "Rafael", "Villar Liñán", "rafa.villar@salesianos.edu",
+		long idRafa = servicio.makeID();
+		Alumno rafa = new Alumno(idRafa, "Rafael", "Villar Liñán", "rafa.villar@salesianos.edu",
 				LocalDate.of(1980, 6, 15));
 		servicio.insert(rafa);
 		
@@ -39,7 +40,7 @@ public class App {
 		
 		
 		// Buscamos y editamos un alumno
-		Alumno buscado = servicio.findById(rafa.getId());
+		Alumno buscado = servicio.findById(idRafa);
 		buscado.setEmail("rafael.villar@salesianos.edu");
 		servicio.edit(buscado);
 		
