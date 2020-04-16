@@ -4,18 +4,18 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.e01ejerciciodao.dao.CrudAlumno;
 import com.salesianostriana.dam.e01ejerciciodao.modelo.Alumno;
 
-@Service
+import lombok.RequiredArgsConstructor;
 
+@Service
+@RequiredArgsConstructor
 public class AlumnoServicio {
 	
-	@Autowired
-	private CrudAlumno c;
+	private final CrudAlumno c;
 	
 	
 	/**
