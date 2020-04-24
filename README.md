@@ -8,6 +8,7 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 * [02_SegundoEjemploSpringCore](https://github.com/lmlopezmagana/bbdd-2020/tree/master/02_SegundoEjemploSpringCore): este segundo ejemplo muestra como realizar la configuración de beans a través de anotaciones.
 * [03_PrimerProyectoSpringBoot](https://github.com/lmlopezmagana/bbdd-2020/tree/master/03_PrimerProyectoSpringBoot): ejemplo de un primer proyecto creado con Spring Boot.
 * [04_PrimerProyectoWeb](https://github.com/lmlopezmagana/bbdd-2020/tree/master/04_PrimerProyectoWeb): en este caso, se trata de un proyecto similar al anterior, pero en el que creamos un primer controlador y una plantilla.
+* [05_PrimerProyectoDataJpa](https://github.com/lmlopezmagana/bbdd-2020/tree/master/05_PrimerProyectoDataJpa): ejemplo de creación de un proyecto desde cero que incluye Spring Data JPA y la base de datos H2. También se puede ver la creación de una entidad, un repositorio, y un ejemplo de su uso.
 
 Además, puedes encontrar algunos proyectos que comienzan por _EXX_, que significa que son la solución a algún ejercicio.
 
