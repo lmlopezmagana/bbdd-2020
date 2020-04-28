@@ -44,7 +44,7 @@ public class Application {
 			
 			for(Alumno a: listaAlumnos) {
 				a.setCurso(primeroDam);
-				alumnoServicio.save(a);
+				alumnoServicio.edit(a);
 			}
 			
 			System.out.println("\n--- alumnoServicio.findAll() ---");
