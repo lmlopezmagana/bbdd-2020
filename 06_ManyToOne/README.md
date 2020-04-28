@@ -90,18 +90,6 @@ Utilizamos _genéricos_ para establecer los tipos de datos que necesitamos:
 - `ID`, el tipo de dato su de Id (_clave primaria_).
 - `R`, el tipo de dato de su repositorio (por ello utilizamos un parámetro de _tipo delimitado_).
 
-### Creación de un servicio a partir del servicio base
-
-La creación de un nuevo servicio a partir de este es ya muy sencilla
-
-```java
-@Service
-public class AlumnoServicio 
-	extends BaseService<Alumno, Long, AlumnoRepository>{
-
-}
-```
-
 ### Creación de un nuevo servicio a partir del servicio base
 
 La creación de un nuevo servicio a partir de este es ya muy sencilla
