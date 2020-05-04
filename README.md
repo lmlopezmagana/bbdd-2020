@@ -16,6 +16,7 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 * [06_ManyToOne](https://github.com/lmlopezmagana/bbdd-2020/tree/master/06_ManyToOne): en este ejemplo se trabajan dos conceptos
     * La creación de un _servicio base_, que nos permite encapsular el repositorio, evitando así el acomplamiento (dista de ser una solución ideal, pero es un buen comienzo). Los demás servicios que sirvan para acceder a los datos pueden extender este.
     * El ejemplo de una asociación muchos-a-uno (`@ManyToOne`) que es tratada unidireccionalmente.
+* [07_OneToManyBidi](https://github.com/lmlopezmagana/bbdd-2020/tree/master/07_OneToManyBidi): ejemplo que completa el anterior, para dar un tratamiento bidireccional a una asociación one-to-many <- -> many-to-one
 
 ## Soluciones a ejercicios    
 
