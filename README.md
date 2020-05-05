@@ -17,6 +17,7 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
     * La creación de un _servicio base_, que nos permite encapsular el repositorio, evitando así el acomplamiento (dista de ser una solución ideal, pero es un buen comienzo). Los demás servicios que sirvan para acceder a los datos pueden extender este.
     * El ejemplo de una asociación muchos-a-uno (`@ManyToOne`) que es tratada unidireccionalmente.
 * [07_OneToManyBidi](https://github.com/lmlopezmagana/bbdd-2020/tree/master/07_OneToManyBidi): ejemplo que completa el anterior, para dar un tratamiento bidireccional a una asociación one-to-many <- -> many-to-one
+* [08_OneToManyComposicion](https://github.com/lmlopezmagana/bbdd-2020/tree/master/08_OneToManyComposicion): ejemplo alternativo al anterior, para dar un tratamiento bidireccional a una asociación _one-to_many_ que en este caso es de composición. Tratamos el lado compuesto como entidad fuerte, y el componente como débil.
 
 ## Soluciones a ejercicios    
 
