@@ -20,6 +20,7 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 * [08_OneToManyComposicion](https://github.com/lmlopezmagana/bbdd-2020/tree/master/08_OneToManyComposicion): ejemplo alternativo al anterior, para dar un tratamiento bidireccional a una asociación _one-to_many_ que en este caso es de composición. Tratamos el lado compuesto como entidad fuerte, y el componente como débil.
 * [09_ManyToManyBidi](https://github.com/lmlopezmagana/bbdd-2020/tree/master/09_ManyToManyBidi): ejemplo de implementación de una asociación _many-to-many_ bidireccional.
 * [10_ManyToManyBidiLogicaNegocio](https://github.com/lmlopezmagana/bbdd-2020/tree/master/10_ManyToManyBidiLogicaNegocio): ejemplo de implementación de algo de lógica de negocio sobre el ejemplo anterior.
+* [11_ManyToManyExtra](https://github.com/lmlopezmagana/bbdd-2020/tree/master/11_ManyToManyExtra): ejemplo de implementación de una asociación _many-to-many_ con atributos extra.
 
 
 ## Soluciones a ejercicios    
