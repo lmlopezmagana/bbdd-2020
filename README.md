@@ -22,6 +22,10 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 * [10_ManyToManyBidiLogicaNegocio](https://github.com/lmlopezmagana/bbdd-2020/tree/master/10_ManyToManyBidiLogicaNegocio): ejemplo de implementación de algo de lógica de negocio sobre el ejemplo anterior.
 * [11_ManyToManyExtra](https://github.com/lmlopezmagana/bbdd-2020/tree/master/11_ManyToManyExtra): ejemplo de implementación de una asociación _many-to-many_ con atributos extra.
 
+## Seguridad
+
+* [12_SeguridadEnMemoria](https://github.com/lmlopezmagana/bbdd-2020/tree/master/12_SeguridadEnMemoria): ejemplo inicial de integración de Spring Security, utilizando usuarios que están en memoria.
+* [13_SeguridadConUDS](https://github.com/lmlopezmagana/bbdd-2020/tree/master/13_SeguridadConUDS): ejemplo más completo, en el que los usuarios se almacenan en la base de datos a través de un servicio.
 
 ## Soluciones a ejercicios    
 
