@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/logout}" method="POST" id="logoutForm"></form>
+	<h1>
+		Bienvenido <span sec:authentication="name">Usuario</span> a la zona de administración.
+	</h1>
+	<a href="javascript:document.getElementById('logoutForm').submit()">Salir</a>
+
+</body>
+</html>
