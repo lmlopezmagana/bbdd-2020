@@ -34,6 +34,10 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 
 ## Herencia
 
+* [15_Herencia_MappedSuperClass](https://github.com/lmlopezmagana/bbdd-2020/tree/master/15_Herencia_MappedSuperclass): ejemplo de implementación de herencia con Spring Data JPA donde la clase base no es una entidad.
+* [16_SingleTable](https://github.com/lmlopezmagana/bbdd-2020/tree/master/16_Herencia_SingleTable): estrategia de herencia en la que tanto la clase base como las hijas se trasladan a una sola tabla y se utiliza una columna como discriminante.
+* [17_Herencia_Joined](https://github.com/lmlopezmagana/bbdd-2020/tree/master/17_Herencia_Joined): última estrategia de herencia, en la cual se genera una tabla para la clase base, con todos sus atributos; y también una tabla para cada una de las subclases, que incluirá una clave externa a la tabla de la clase base, así como los posibles atributos propios que tenga.
+
 ## Consultas
 
 ## Soluciones a ejercicios    
