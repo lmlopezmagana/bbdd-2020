@@ -23,11 +23,11 @@ He aquí un ejemplo de formulario multiparte:
 </form>
 ```
 
-## Más teoría: uso de _properties_ y `@Value` (`org.springframework.beans.factory.annotation.Value`)
+## Más teoría: uso de _properties_ y `@Value`
 
 En muchas ocasiones querremos poder configurar determinados aspectos de nuestra aplicación sin necesidad de tocar el código fuente. Una buena manera de hacerlo es a través del sistema de _properties_, como el fichero `application.properties`. Spring Boot proporciona todo lo necesario para que podemos utilizar en él propiedades _predefinidas_ (conocidas por Spring), o incluso algunas de nuestra cosecha. Con esto, podemos definir el valor de algunas variables que luego podemos utilizar a lo largo del sistema.
 
-Hay diferentes formas de conseguir el valor de una propiedad, pero uno de los más sencillos es a través de `@Value` (**ojo con la clase que hay que importar**). Esta anotación nos permite inyectar el valor de una propiedad en una variable. Lo más seguro es hacerlo a través de un constructor.
+Hay diferentes formas de conseguir el valor de una propiedad, pero uno de los más sencillos es a través de `@Value` (**ojo con la clase que hay que importar**: `org.springframework.beans.factory.annotation.Value`). Esta anotación nos permite inyectar el valor de una propiedad en una variable. Lo más seguro es hacerlo a través de un constructor.
 
 
 ```java
