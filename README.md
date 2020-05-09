@@ -26,11 +26,13 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 
 * [12_SeguridadEnMemoria](https://github.com/lmlopezmagana/bbdd-2020/tree/master/12_SeguridadEnMemoria): ejemplo inicial de integración de Spring Security, utilizando usuarios que están en memoria.
 * [13_SeguridadConUDS](https://github.com/lmlopezmagana/bbdd-2020/tree/master/13_SeguridadConUDS): ejemplo más completo, en el que los usuarios se almacenan en la base de datos a través de un servicio.
+* [18_SeguridadConHerencia](https://github.com/lmlopezmagana/bbdd-2020/tree/master/18_SeguridadConHerencia): ejemplo basado en el anterior, pero que hace uso de herencia para tener diferentes clases de tipo usuario, realizando además una redirección específica tras el login basada en el rol del usuario.
 
 ## Subida de imágenes
 
 * [14_SubidaImagenes](https://github.com/lmlopezmagana/bbdd-2020/tree/master/14_SubidaImagenes): ejemplo con todo el código neceasario para integrar en vuestros proyectos para poder implementar la subida de imágenes. **Dadas la circunstancias de este curso, este ejemplo es más recomendable para utilizar que el siguiente**.
 * [Upload Files](https://spring.io/guides/gs/uploading-files/): ejemplo oficial de Spring, en el cual se basa el anterior, con el código necesario para realizar la subida de ficheros hacia el sistema de ficheros del proyecto.
+
 
 ## Herencia
 
