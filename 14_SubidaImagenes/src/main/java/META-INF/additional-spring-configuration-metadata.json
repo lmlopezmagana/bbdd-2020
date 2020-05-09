@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "image.max-size",
+    "type": "java.lang.String",
+    "description": "A description for 'image.max-size'"
+  },
+  {
+    "name": "image.compression-quality",
+    "type": "java.lang.String",
+    "description": "A description for 'image.compression-quality'"
+  },
+  {
+    "name": "image.base-path",
+    "type": "java.lang.String",
+    "description": "A description for 'image.base-path'"
+  }
+]}

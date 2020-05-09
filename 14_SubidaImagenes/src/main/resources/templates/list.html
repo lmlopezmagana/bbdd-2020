@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Listado</h1>
+<a th:href="@{/}">Formulario</a>
+<table>
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Imagen</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="c : ${lista}">
+			<td th:text="${c.nombre}"></td>
+			<td><img th:src="@{{base}/{id}(base=${base_image_path},id=${c.imagen})}" /></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
