@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Listado de productos</title>
+</head>
+<body>
+	<h1>Productos en carrito</h1>
+	<p>Nº de productos en carrito <span th:text="${numProductosDiferentes}"></span></p>
+	<p>Nº de unidades en carrito <span th:text="${numUnidades}"></span></p>	
+	<table>
+		<thead>
+			<tr>
+				<th>Unidades</th>
+				<th>Nombre</th>
+				<th>Precio unitario</th>
+				<th>Subtotal</th>
+				<th>Operaciones</th>
+		</thead>
+		<tbody>
+			<tr th:each="entry : ${carrito}">
+				<td th:text="${entry.value}">1</td>
+				<td th:text="${entry.key.nombre}">Nombre</td>
+				<td style="text-align: right;" th:text="${#numbers.formatCurrency(entry.key.precio)}">1.23€</td>
+				<td style="text-align: right;" th:text=${#numbers.formatCurrency(entry.key.precio*entry.value)}></td>
+				<td><a th:href="@{/carrito/remove/{id}(id=${entry.key.id})}">Eliminar del carrito</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>Importe total de los productos <span th:text="${#numbers.formatCurrency(importeTotal)}"></span></p>
+	<p><a th:href="@{/}">Seguir comprando</a> | <a th:href="@{/carrito/clear}">Vaciar carrito</a></p>
+	<p><a th:href="@{/carrito/process}">FINALIZAR COMPRA</a></p>
+</body>
+</html>

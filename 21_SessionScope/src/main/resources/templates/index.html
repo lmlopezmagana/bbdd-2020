@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Listado de productos</title>
+</head>
+<body>
+	<h1>Listado de productos</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Precio unitario</th>
+				<th>Operaciones</th>
+		</thead>
+		<tbody>
+			<tr th:each="prod : ${productos}">
+				<td th:text="${prod.nombre}">Nombre</td>
+				<td style="text-align: right;" th:text="${#numbers.formatCurrency(prod.precio)}">1.23€</td>
+				<td><a th:href="@{/carrito/add/{id}(id=${prod.id})}">Añadir al carrito</a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

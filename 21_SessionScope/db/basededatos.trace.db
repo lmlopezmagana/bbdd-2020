@@ -1,0 +1,4 @@
+2020-05-14 12:52:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCTOS" no encontrada
+Table "PRODUCTOS" not found; SQL statement:
+insert into productos (id, nombre, precio) values (NEXTVAL('hibernate_sequence'),'Producto 1', 20.3) [42102-200]
