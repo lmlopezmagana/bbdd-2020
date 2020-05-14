@@ -42,6 +42,9 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 
 ## Consultas
 
+* [19_Consultas-01](https://github.com/lmlopezmagana/bbdd-2020/tree/master/19_Consultas-01): ejemplo de consultas derivadas por nombre del método. Se trata de una de las grandes alternativas que ofrece Spring Data JPA para aquellos programadores menos _duchos_ en SQL.
+* [20_Consultas-02](https://github.com/lmlopezmagana/bbdd-2020/tree/master/20_Consultas-02): ejemplo de consultas utilizando JPQL. Se trata de un lenguaje, similar a SQL, e inspirado en HQL (_Hibernate Query Language_). Si vienes del mundo SQL, esta puede ser tu solución.
+
 ## Soluciones a ejercicios    
 
 Además, puedes encontrar algunos proyectos que comienzan por _EXX_, que significa que son la solución a algún ejercicio.
