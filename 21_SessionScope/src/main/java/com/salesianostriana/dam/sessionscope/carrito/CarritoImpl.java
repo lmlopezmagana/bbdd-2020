@@ -1,12 +1,11 @@
 package com.salesianostriana.dam.sessionscope.carrito;
 
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import com.salesianostriana.dam.sessionscope.model.Producto;
 import com.salesianostriana.dam.sessionscope.model.servicios.ProductoServicio;
@@ -14,13 +13,12 @@ import com.salesianostriana.dam.sessionscope.model.servicios.ProductoServicio;
 import lombok.RequiredArgsConstructor;
 
 @Service
-@Scope(value = "session",  proxyMode = ScopedProxyMode.INTERFACES)
-//@SessionScope
+@SessionScope
 @RequiredArgsConstructor
 public class CarritoImpl implements Carrito {
 	
 	
-	private Map<Producto, Integer> productosEnCarrito = new HashMap<>();
+	private Map<Producto, Integer> productosEnCarrito = new LinkedHashMap<>();
 	private final ProductoServicio productoServicio;
 	
 		
