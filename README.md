@@ -33,7 +33,6 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 * [14_SubidaImagenes](https://github.com/lmlopezmagana/bbdd-2020/tree/master/14_SubidaImagenes): ejemplo con todo el código neceasario para integrar en vuestros proyectos para poder implementar la subida de imágenes. **Dadas la circunstancias de este curso, este ejemplo es más recomendable para utilizar que el siguiente**.
 * [Upload Files](https://spring.io/guides/gs/uploading-files/): ejemplo oficial de Spring, en el cual se basa el anterior, con el código necesario para realizar la subida de ficheros hacia el sistema de ficheros del proyecto.
 
-
 ## Herencia
 
 * [15_Herencia_MappedSuperClass](https://github.com/lmlopezmagana/bbdd-2020/tree/master/15_Herencia_MappedSuperclass): ejemplo de implementación de herencia con Spring Data JPA donde la clase base no es una entidad.
@@ -44,6 +43,10 @@ A continuación, se detallan los proyectos que se incluyen dentro del repositori
 
 * [19_Consultas-01](https://github.com/lmlopezmagana/bbdd-2020/tree/master/19_Consultas-01): ejemplo de consultas derivadas por nombre del método. Se trata de una de las grandes alternativas que ofrece Spring Data JPA para aquellos programadores menos _duchos_ en SQL.
 * [20_Consultas-02](https://github.com/lmlopezmagana/bbdd-2020/tree/master/20_Consultas-02): ejemplo de consultas utilizando JPQL. Se trata de un lenguaje, similar a SQL, e inspirado en HQL (_Hibernate Query Language_). Si vienes del mundo SQL, esta puede ser tu solución.
+
+## Beans de sesión / carrito de la compra
+
+* [21_SessionScope](https://github.com/lmlopezmagana/bbdd-2020/tree/master/21_SessionScope): ejemplo de uso de _beans de sesión_ para implementar un sencillo carrito de la compra.
 
 ## Soluciones a ejercicios    
 
